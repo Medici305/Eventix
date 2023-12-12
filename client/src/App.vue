@@ -1,9 +1,10 @@
 <template>
-  <h1>hello</h1>
+  <div id="app">
+    <AppNavbar />
+    <router-view></router-view>
+  </div>
 </template>
 
-<script>
-export default {
-  name: 'App',
-};
+<script setup>
+import AppNavbar from './components/AppNavbar.vue';
 </script>
